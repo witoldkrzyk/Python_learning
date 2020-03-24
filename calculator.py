@@ -1,4 +1,4 @@
-#calculator
+#calculator dwoch liczb
 
 print("Witaj w kalkulatorze ! \U0001F642")
 
