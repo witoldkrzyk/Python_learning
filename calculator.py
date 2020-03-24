@@ -25,6 +25,9 @@ def dzielenie(x, y):
 def potegowanie(x, y):
     return x ** y
 
+#modulo
+def modulo(x, y):
+    return x % y
 
 print('Wybierz operacje: ')
 print('1. Dodawanie')
@@ -32,8 +35,9 @@ print('2. Odejmowanie')
 print('3. Mnozenie')
 print('4. Dzielenie')
 print('5. Potegowanie')
+print('6 Modulo pierwszej z drugiej')
 
-wybor = int(input('Wybierz co chcesz zrobic: 1 / 2 / 3 / 4 / 5 :  '))
+wybor = int(input('Wybierz co chcesz zrobic: 1 / 2 / 3 / 4 / 5 / 6 :  '))
 
 x = float(input('Wpisz pierwsza liczbe: '))
 y = float(input('Wpisz druga liczbe: '))
@@ -54,3 +58,6 @@ elif wybor == 4:
 
 elif wybor == 5:
     print(f'{x} ^ {y} = {potegowanie(x, y)}')
+
+elif wybor == 6:
+    print(f'{x} % {y} = {modulo(x, y)}')
