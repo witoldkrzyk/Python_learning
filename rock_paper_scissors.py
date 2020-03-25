@@ -4,11 +4,16 @@ player = None
 
 computer = random.choice(['rock','paper','scissors'])
 
+#validation
 while player == None:
     player = input("Write here your choice: ")
     if player not in ['rock','paper','scissors']:
         print("You must choose the valid value")
         player = None
+
+
+print(f'Computer choose: {computer}')
+print(f'Player choose: {player}')
 
 
 if player == computer:
@@ -33,5 +38,5 @@ if player == 'rock':
         print('Computer wins!')
 
 
-print('Computer choose:  {}'.format(computer))
-print('Player choose: {}'.format(player))
+#print('Computer choose:  {}'.format(computer))
+#print('Player choose: {}'.format(player))
