@@ -4,12 +4,11 @@ def inputNumber(message):
     while True:
         try:
             userInput = int(input(message))
+            return userInput
         except ValueError:
             print('To nie jest liczba! Wpisz liczbę')
             continue
-        else:
-            return userInput
-            break
+       
 
 
 print("Witaj w kalkulatorze ! \U0001F642")
